@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Торговый Дом "Уют и Комфорт"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Уют и Комфорт</a>
+                <button class="mobile-menu-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link active">Каталог</a>
+                    <a href="index.html#sales" class="nav-link">Акции</a>
+                    <a href="index.html#blog" class="nav-link">Блог</a>
+                    <a href="index.html#reviews" class="nav-link">Отзывы</a>
+                    <a href="index.html#about" class="nav-link">О нас</a>
+                    <a href="index.html#contact" class="nav-link">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catalog Hero -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1>Каталог товаров</h1>
+            <p>Найдите всё необходимое для вашего дома</p>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="catalog-layout">
+                <!-- Sidebar Filters -->
+                <aside class="catalog-sidebar">
+                    <div class="filter-section">
+                        <h3>Поиск</h3>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Найти товар...">
+                    </div>
+                    <div class="filter-section">
+                        <h3>Категории</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" data-category="furniture" checked>
+                                <span>Мебель</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" data-category="lighting" checked>
+                                <span>Освещение</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" data-category="textile" checked>
+                                <span>Текстиль</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" data-category="decor" checked>
+                                <span>Декор</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" data-category="kitchen" checked>
+                                <span>Для кухни</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" data-category="storage" checked>
+                                <span>Хранение</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" id="resetFilters">Сбросить фильтры</button>
+                </aside>
+
+                <!-- Products Grid -->
+               <div class="catalog-main">
+    <div class="catalog-header">
+        <p class="results-count">Показано: <span id="resultsCount">18</span> товаров</p>
+    </div>
+    
+    <div class="products-grid" id="productsGrid">
+        <!-- Furniture -->
+        <div class="product-card" data-category="furniture">
+            <div class="product-image"><img src="./img/sofa.png" alt="Диван 'Комфорт'"></div>
+            <div class="product-info">
+                <h3>Диван "Комфорт"</h3>
+                <p class="product-description">Просторный 3-местный диван с мягкими подушками</p>
+                <p class="product-price">45 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="furniture">
+            <div class="product-image"><img src="./img/armchair.png" alt="Кресло 'Релакс'"></div>
+            <div class="product-info">
+                <h3>Кресло "Релакс"</h3>
+                <p class="product-description">Удобное кресло для отдыха</p>
+                <p class="product-price">15 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="furniture">
+            <div class="product-image"><img src="./img/table.png" alt="Обеденный стол"></div>
+            <div class="product-info">
+                <h3>Обеденный стол</h3>
+                <p class="product-description">Раздвижной стол из массива дуба</p>
+                <p class="product-price">32 990 ₽</p>
+            </div>
+        </div>
+
+        <!-- Lighting -->
+        <div class="product-card" data-category="lighting">
+            <div class="product-image"><img src="./img/living_room.png" alt="Люстра 'Кристалл'"></div>
+            <div class="product-info">
+                <h3>Люстра "Кристалл"</h3>
+                <p class="product-description">Элегантная люстра с хрустальными подвесками</p>
+                <p class="product-price">18 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="lighting">
+            <div class="product-image"><img src="./img/lamp.png" alt="Торшер 'Луна'"></div>
+            <div class="product-info">
+                <h3>Торшер "Луна"</h3>
+                <p class="product-description">Современный торшер с регулировкой яркости</p>
+                <p class="product-price">7 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="lighting">
+            <div class="product-image"><img src="./img/desk_lamp.png" alt="Настольная лампа"></div>
+            <div class="product-info">
+                <h3>Настольная лампа</h3>
+                <p class="product-description">Минималистичная лампа для рабочего стола</p>
+                <p class="product-price">3 490 ₽</p>
+            </div>
+        </div>
+
+        <!-- Textile -->
+        <div class="product-card" data-category="textile">
+            <div class="product-image"><img src="./img/set.png" alt="Постельное белье 'Сон'"></div>
+            <div class="product-info">
+                <h3>Постельное белье "Сон"</h3>
+                <p class="product-description">100% хлопок, 2-спальный комплект</p>
+                <p class="product-price">4 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="textile">
+            <div class="product-image"><img src="./img/curtains.png" alt="Шторы 'Элегант'"></div>
+            <div class="product-info">
+                <h3>Шторы "Элегант"</h3>
+                <p class="product-description">Плотные шторы с подкладкой</p>
+                <p class="product-price">8 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="textile">
+            <div class="product-image"><img src="./img/pillows.png" alt="Декоративные подушки"></div>
+            <div class="product-info">
+                <h3>Декоративные подушки</h3>
+                <p class="product-description">Набор из 3 подушек разных размеров</p>
+                <p class="product-price">2 990 ₽</p>
+            </div>
+        </div>
+
+        <!-- Decor -->
+        <div class="product-card" data-category="decor">
+            <div class="product-image"><img src="./img/art.png" alt="Картина 'Абстракция'"></div>
+            <div class="product-info">
+                <h3>Картина "Абстракция"</h3>
+                <p class="product-description">Современная картина 60x80 см</p>
+                <p class="product-price">5 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="decor">
+            <div class="product-image"><img src="./img/vase.png" alt="Ваза 'Минимализм'"></div>
+            <div class="product-info">
+                <h3>Ваза "Минимализм"</h3>
+                <p class="product-description">Керамическая ваза ручной работы</p>
+                <p class="product-price">1 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="decor">
+            <div class="product-image"><img src="./img/clock.png" alt="Настенные часы"></div>
+            <div class="product-info">
+                <h3>Настенные часы</h3>
+                <p class="product-description">Скандинавский стиль, диаметр 30 см</p>
+                <p class="product-price">2 490 ₽</p>
+            </div>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="product-card" data-category="kitchen">
+            <div class="product-image"><img src="./img/dinner_set.png" alt="Набор посуды"></div>
+            <div class="product-info">
+                <h3>Набор посуды</h3>
+                <p class="product-description">24 предмета из керамики</p>
+                <p class="product-price">6 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="kitchen">
+            <div class="product-image"><img src="./img/knives.png" alt="Набор ножей"></div>
+            <div class="product-info">
+                <h3>Набор ножей</h3>
+                <p class="product-description">5 ножей из нержавеющей стали</p>
+                <p class="product-price">3 990 ₽</p>
+            </div>
+        </div>
+        <div class="product-card" data-category="kitchen">
+            <div class="product-image"><img src="./img/coffee_set.png" alt="Кофейный сервиз"></div>
+            <div class="product-info">
+                <h3>Кофейный сервиз</h3>
+                <p class="product-description">6 чашек с блюдцами</p>
+                <p class="product-price">4 490 ₽</p>
+            </div>
+        </div>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
